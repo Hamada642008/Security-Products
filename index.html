@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-dark">
+    <nav class="navbar nav-light bg-light mt-4 navbar-expand-lg">
+        <div class="container">
+            <span class="navbar-brand w-25">
+                <a href="./index.html">
+                    <img src="./images/logo.webp" class="img-fluid w-25 rounded" alt="" >
+                </a>
+            </span>
+            <button class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse text-center" id="nav">
+                <ul class="navbar-nav fs-3 gap-3 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav-item ms-auto d-flex justify-content-between">
+                    <a href="#login" class="nav-link d-flex gap-2 justify-content-center" data-bs-toggle="modal">
+                        <h3 class="fs-3">Login</h3>
+                        <img src="./images/user.png" alt="" class="img-fluid h-50 mt-2">
+                    </a>
+                    <button onclick="opensearch()" class="ms-4 btn">
+                        <img src="./images/search-icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-light alert-dismissible " role="alert" id="search">
+        <div class="d-flex gap-2">
+            <input type="search" class="form-control w-75" placeholder="Search Product" id="inputsearch">
+            <img src="./images/search-icon.png" alt="" class="img-fluid" width="15" height="15" id="clicksearch">
+        </div>
+        <button type="button" class="btn-close" aria-label="Close" onclick="closesearch()"></button>
+    </div>
+    <h1 class="text-center text-light mt-3">Welcome To Bermibolo Security</h1>
+<!-- header -->
+    <header class="bg-light" id="home">
+        <div class="container" >
+            <div class="row p-3">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1>Buy Smart. Live Safe</h1>
+                    <p class="text-capitalize fs-3">we do the research to make your home and community safer</p>
+                    <div class="d-flex gap-3">
+                        <a class="btn btn1 btn-info p-2 pe-4 ps-4 text-light" href="#contact">Contact Us</a>
+                        <a class="btn btn2 btn-danger p-2 pe-4 ps-4" href="#about">About Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/header.webp" class="img-fluid mt-3 rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- form login -->
+        <div class="modal align-content-center" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-dark mb-2 modal-title">Login</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class=" w-100 p-4 rounded">
+                            <input type="text" placeholder="Name" class="form-control shadow input">
+                            <small></small>
+                            <input type="email" placeholder="Email" class="form-control shadow mt-2 mb-2 input">
+                            <small></small>
+                            <input type="password" placeholder="Password" class="form-control shadow input">
+                            <small></small>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button class="btn btn1 btn-info text-light mt-2 ps-4 pe-4 p-2" onclick="submit()">submit</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-info rounded-circle position-fixed ms-5 bottom-25" id="up">&uarr;</button>
+    </header>
+<!-- products -->
+    <section class="p-5" id="products">
+        <h1 class="text-dark text-center ">Products</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="./images/products/Cameras/p-1.jpg" alt="" class="img-fluid w-75">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h3 class="card-title">Security Camera</h3>
+                            <div class="card-text">
+                                <p>Camera provide constant surveillance to enhance security and protect property.</p>
+                                
+                            </div>
+                            <button class="btn btn-primary mb-4 w-50">
+                                <a href="./products/cam/index.html" class="text-light ">Read More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="card">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="./images/products/Doorbell Cameras/p-1.jpg" alt="" class="img-fluid w-75">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h3 class="card-title">Doorbell</h3>
+                            <div class="card-text">
+                                <p>An advanced security system that provides comprehensive protection for your home or business through modern devices and smart technologies to ensure your safety.</p>
+                                
+                            </div>
+                            <button class="btn btn-primary mb-4 w-50">
+                                <a href="./products/door/index.html" class="text-light ">Read More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-img d-flex justify-content-center">
+                            <img src="./images/products/Smart Locks/p-1.png" alt="" class="img-fluid w-75">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <h3 class="card-title">Smart Locks</h3>
+                            <div class="card-text">
+                                <p>Innovative, modern products that combine elegance and intelligence, to meet your daily needs in a distinctive style.</p>
+                                
+                            </div>
+                            <button class="btn btn-primary mb-4 w-50">
+                                <a href="./products/look/index.html" class="text-light">Read More</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- about -->
+    <section class="text-light">
+        <h1 class="text-center" id="about">About Us</h1>
+        <div class="container mb-5 bg-light text-dark p-5 mt-3">
+            <div class="row ">
+                <div class="col-lg-6">
+                    <h4>
+                        We do this by promoting high-quality, easy-to-operate products supported by reliable 24/7 
+                        technical support services to provide a safe and comfortable environment for our customers. 
+                        From integrated security systems to independent devices, we design solutions customized for a 
+                        particular need or requirement of our home security enhancement. Our vision is to make security 
+                        accessible to everyone, to offer services that keep pace with the developments of the times while
+                        maintaining the highest levels of quality and innovation. Let our company be the first
+                        line of your defense against risks, enjoying complete peace of mind about the safety of your home.
+                    </h4>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <img src="./images/about.jfif" width="500" class="img-fluid rounded"  alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- reviews -->
+    <section class="container mb-5">
+        <h1 class="text-light text-center">Customer reviews</h1>
+        <div class="row gap-4 justify-content-center">
+            <div class="col-lg-3 card p-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="./images/t-1.jpg" class="img-fluid w-50 rounded-circle" alt="">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Steve</h1>
+                    <img src="./images/satrs.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 card p-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="./images/t-3.jpg" class="img-fluid w-50 rounded-circle" alt="">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Tom</h1>
+                    <img src="./images/satrs.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 card p-4 d-flex flex-column justify-content-center align-items-center">
+                <img src="./images/t-2.jpg" class="img-fluid w-50 rounded-circle" alt="">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Michael</h1>
+                    <img src="./images/satrs.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- form contact -->
+    <section class="container d-flex flex-column align-items-center mb-5" id="contact">
+        <h1 class="text-light text-center mb-2">Contact Us</h1>
+        <div action="" class="w-50 p-3 bg-light rounded">
+            <input type="text" name="" id="" class="form-control shadow inputs" placeholder="Email">
+            <p class="texts"></p>
+            <input type="text" name="" id="" class="form-control shadow mt-2 mb-2 inputs" placeholder="Subject">
+            <p class="texts"></p>
+            <textarea name="" id="" class="form-control shadow inputs" placeholder="Message"></textarea>
+            <p class="texts"></p>
+            <button class="btn btn1 btn-info text-light mt-2 ps-4 pe-4 p-2" onclick="send()">Send</button>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="container text-light mb-3">
+        <div class="row">
+            <h4 class="col-lg-6 text-lg-start text-center">Copyright © 2024 Berimbolo Security.</h4>
+            <div class="col-lg-6 d-flex justify-content-lg-end gap-2 justify-content-center mb-3">
+                <a class="btn btn-outline-info active" href="https://www.facebook.com/prezicom/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a class="btn btn-outline-info" href="https://www.linkedin.com/company/prezi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a class="btn btn-outline-info" href="https://youtu.be/o0SLSCW68Ts?si=Y_-eYELQcbjKdVPM" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a class="btn btn-outline-info" href="https://wa.me/010248788"><i class="bi bi-whatsapp"></i></a>
+                <a class="btn btn-outline-info" href="https://x.com/prezi" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/script2.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

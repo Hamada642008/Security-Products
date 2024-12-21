@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droop bell security</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-dark">
+    <nav class="navbar nav-light bg-light mt-4 navbar-expand-lg">
+        <div class="container">
+            <span class="navbar-brand w-25">
+                <a href="../../index.html">
+                    <img src="../images/logo.webp" class="img-fluid w-25 rounded" alt="" >
+                </a>
+            </span>
+            <button class="navbar-toggler" data-bs-target="#nav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse text-center" id="nav">
+                <ul class="navbar-nav fs-3 gap-3 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a href="../../index.html#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../index.html#products" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../index.html#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../index.html#contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav-item ms-auto ">
+                    <a href="#login" class="nav-link d-flex gap-2 justify-content-center" data-bs-toggle="modal">
+                        <h3 class="fs-3">Login</h3>
+                        <img src="../images/user.png" alt="" class="img-fluid h-50 mt-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal align-content-center" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-dark mb-2 modal-title">Login</h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class=" w-100 p-4 rounded">
+                            <input type="text" placeholder="Name" class="form-control shadow input">
+                            <small></small>
+                            <input type="email" placeholder="Email" class="form-control shadow mt-2 mb-2 input">
+                            <small></small>
+                            <input type="password" placeholder="Password" class="form-control shadow input">
+                            <small></small>
+                        </form>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                    <button class="btn btn1 btn-info text-light mt-2 ps-4 pe-4 p-2" onclick="submit()">submit</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1 class="text-light text-center my-3">Droop bell security</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="img-card text-center">
+                        <img src="../images/products/Doorbell Cameras/p-1.jpg" alt="Securty Camera1" class="img-fluid" width="150">
+                    </div>
+                    <div class="card-body py-2 text-center">
+                        <h2 class="title-card">
+                            Ring Video Doorbell
+                            (2nd Gen)</h2>
+                        <div class="card-text">
+                            <p class="text-start">An advanced security system that provides comprehensive protection for your home or business through modern devices and smart technologies to ensure your safety.</p>
+                            <img src="../images/4-stars.png" alt="" class="img-fluid w-75">
+                            <button class="btn btn-primary w-75 rounded-5">
+                                <a class="text-light " href="https://www.amazon.com/dp/B08N5NQ869?linkCode=ll1&tag=safewicom-20&linkId=36634276922e327681ccc67aab93eaf6&language=en_US&ref_=as_li_ss_tl&cl_system=mapi&cl_system_id=f87c4ff2-8854-436c-aa09-a315dfa8747f&clreqid=f87c4ff2-8854-436c-aa09-a315dfa8747f&kbid=58587" target="_blank">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="img-card text-center">
+                        <img src="../images/products/Doorbell Cameras/p-3.jpg" alt="Securty Camera1" class="img-fluid" width="210">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="title-card text-center">
+                            Google Nest Doorbell (Battery)</h2>
+                        <div class="text-card py-2 text-center">
+                            <p class="text-start">Smart security devices that provide effective protection and advanced monitoring with a modern design that keeps pace with the needs of modern security.</p>
+                            <img src="../images/satrs.jpg" alt="" class="img-fluid w-75">
+                            <button class="btn btn-primary w-75 rounded-5 mt-3">
+                                <a class="text-light " href="https://store.google.com/us/product/nest_doorbell?hl=en-US" target="_blank">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <div class="img-card text-center">
+                        <img src="../images/products/Doorbell Cameras/p-2.png" alt="Securty Camera1" class="img-fluid" width="220">
+                    </div>
+                    <div class="text-card py-2 text-center">
+                        <h2 class="title-card">
+                            Arlo Essential Wired</h2>
+                        <p class="text-start">Innovative solutions for monitoring and protecting properties, characterized by high efficiency and ease of use to provide security and comfort.</p>
+                        <img src="../images/3-stars.jpg" alt="" class="img-fluid w-75">
+                        <button class="btn btn-primary w-75 rounded-5">
+                            <a class="text-light " href="https://www.amazon.com/Arlo-Doorbell-Weather-Resistant-Detection-Installation/dp/B07YMV9VMT?th=1&linkCode=ll1&tag=safewicom-20&linkId=ef6ccbbe15b17789a911b4aaab0bde5b&language=en_US&ref_=as_li_ss_tl&cl_system=mapi&cl_system_id=f87c4ff2-8854-436c-aa09-a315dfa8747f&clreqid=f87c4ff2-8854-436c-aa09-a315dfa8747f&kbid=58587" target="_blank">Shop Now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h6 class="text-center text-light my-4">Copyright © 2024 Berimbolo Security.</h6>
+    </footer>
+    <script src="../js/script2.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
